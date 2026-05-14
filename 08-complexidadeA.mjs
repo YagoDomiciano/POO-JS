@@ -51,3 +51,28 @@ function exemploLogN(array){
         console.log(array[i])
     }
 }
+
+function exemploN_2(array){
+    for(let i = 0; i < array.length; i++){
+        for(let j = 0; j < array.length; j++){
+            console.log(array[i], array[j])
+        }
+    }
+}
+
+function exemplo2_N(n){
+    if(n === 0) return 1
+    return exemplo2_N(n - 1) + exemplo2_N(n - 1)
+}
+
+function factorialIterativo(n){
+    let resultado = 1
+    for(let i = n; i > 1; i--){
+        resultado = resultado * i
+    }
+}
+
+function fatorialRecursivo(num) {
+    if (num === 0) return 1;
+    return num * fatorialRecursivo(num - 1);
+  }
